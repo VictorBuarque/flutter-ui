@@ -65,8 +65,9 @@ flutter:
     - assets/images/logo.png
     - assets/images/home.png
     - assets/images/agendar.png
-    - assets/images/laudo.jpeg
-    - assets/images/servicos.jpeg
+    - assets/images/laudo.png
+    - assets/images/servicos.png
+    - assets/images/vistoria.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
