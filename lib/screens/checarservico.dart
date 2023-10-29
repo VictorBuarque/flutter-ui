@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/routes/app_routes.dart';
 
 void main() {
   runApp(MaterialApp(
     initialRoute: '/',
     routes: {
       '/': (context) => HomeScreen(),
-      '/checarservico': (context) => ChecarServico(),
+      '/checar_servico': (context) => ChecarServico(),
     },
   ));
 }
@@ -33,7 +34,7 @@ class HomeScreen extends StatelessWidget {
             color: Colors.white,
           ),
           onPressed: () {
-            Navigator.pushNamed(context, '/ChecarServico');
+            Navigator.pushNamed(context, AppRoutes.checarservico);
           },
         ),
       ),

@@ -58,14 +58,13 @@ class _HomeScreenState extends State<HomeScreen> {
               title: const Text('Sua conta'),
               onTap: () {
                 Navigator.of(context).pop(); // Fecha o menu
-                // Execute a ação desejada, como navegar para outra tela
               },
             ),
             ListTile(
               title: const Text('Ajuda'),
               onTap: () {
                 Navigator.of(context).pop(); // Fecha o menu
-                // Execute a ação desejada, como navegar para outra tela
+                
               },
             ),
           ],
@@ -84,17 +83,17 @@ class _HomeScreenState extends State<HomeScreen> {
             _buildImageWithTitle(
               'assets/images/laudo.png',
               'Checar Status Serviço',
-              '/checarservico', // Rota para redirecionamento
+              '/checar_servico', 
             ),
             _buildImageWithTitle(
               'assets/images/vistoria.png',
               'Solicitar Nova Vistoria',
-              '/vistoria', // Rota para redirecionamento
+              '/vistoria', 
             ),
             _buildImageWithTitle(
               'assets/images/servicos.png',
               'Solicitar Outros serviços',
-              '/servicos', // Rota para redirecionamento
+              '/servicos', 
             ),
           ],
         ),

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/',
+    initialRoute: '/homescreen',
     routes: {
-      '/': (context) => HomeScreen(),
+      '/homescreen': (context) => HomeScreen(),
       '/agendar': (context) => Agendar(),
     },
   ));
@@ -84,7 +84,7 @@ class Agendar extends StatelessWidget {
               _buildInputField('Número de Telefone:'),
               _buildInputField('E-mail:'),
               _buildInputField('Data:'),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Row(
@@ -144,6 +144,7 @@ class Agendar extends StatelessWidget {
         ),
         SizedBox(
           width: 300,
+          height: 40,
           child: TextFormField(
             decoration: InputDecoration(
               filled: true,
