@@ -5,21 +5,23 @@ void main() {
   runApp(MaterialApp(
     initialRoute: '/',
     routes: {
-      '/': (context) => HomeScreen(),
-      '/checar_servico': (context) => ChecarServico(),
+      '/': (context) => const HomeScreen(),
+      '/checar_servico': (context) => const ChecarServico(),
     },
   ));
 }
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF42A5F5),
       appBar: AppBar(
         backgroundColor: const Color(0xFF42A5F5),
-        title: Center(
-          child: const Text(
+        title: const Center(
+          child: Text(
             'FluidOps Services',
             style: TextStyle(
               fontSize: 24,
@@ -29,7 +31,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
             color: Colors.white,
           ),
@@ -38,8 +40,8 @@ class HomeScreen extends StatelessWidget {
           },
         ),
       ),
-      body: Center(
-        child: const Text(
+      body: const Center(
+        child: Text(
           'Página Inicial',
           style: TextStyle(
             fontSize: 24,
@@ -52,14 +54,16 @@ class HomeScreen extends StatelessWidget {
 }
 
 class ChecarServico extends StatelessWidget {
+  const ChecarServico({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF42A5F5),
       appBar: AppBar(
         backgroundColor: const Color(0xFF42A5F5),
-        title: Center(
-          child: const Text(
+        title: const Center(
+          child: Text(
             'ChecarServico',
             style: TextStyle(
               fontSize: 24,

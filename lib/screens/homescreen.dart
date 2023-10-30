@@ -3,7 +3,7 @@ import 'package:flutter_ui/screens/agendar.dart';
 import 'package:flutter_ui/screens/checarservico.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -19,8 +19,8 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: const Color(0xFF42A5F5),
       appBar: AppBar(
         backgroundColor: const Color(0xFF42A5F5),
-        title: Center(
-          child: const Text(
+        title: const Center(
+          child: Text(
             'FluidOps Services',
             style: TextStyle(
               fontSize: 24,
@@ -43,10 +43,10 @@ class _HomeScreenState extends State<HomeScreen> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-            UserAccountsDrawerHeader(
-              accountName: const Text('Victor Gabriel'),
-              accountEmail: const Text('victor.silva8@ba.estudante.senai.br'),
-              currentAccountPicture: const CircleAvatar(
+            const UserAccountsDrawerHeader(
+              accountName: Text('Victor Gabriel'),
+              accountEmail: Text('victor.silva8@ba.estudante.senai.br'),
+              currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Text(
                   'V',
@@ -146,9 +146,9 @@ void main() {
     MaterialApp(
       initialRoute: '/homescreen',
       routes: {
-        '/': (context) => HomeScreen(),
-        '/agendar': (context) => Agendar(),
-        '/checar_servico':(context) =>ChecarServico()
+        '/': (context) => const HomeScreen(),
+        '/agendar': (context) => const Agendar(),
+        '/checar_servico':(context) =>const ChecarServico()
       },
     ),
   );

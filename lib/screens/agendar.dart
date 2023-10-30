@@ -4,21 +4,23 @@ void main() {
   runApp(MaterialApp(
     initialRoute: '/homescreen',
     routes: {
-      '/homescreen': (context) => HomeScreen(),
-      '/agendar': (context) => Agendar(),
+      '/homescreen': (context) => const HomeScreen(),
+      '/agendar': (context) => const Agendar(),
     },
   ));
 }
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF42A5F5),
       appBar: AppBar(
         backgroundColor: const Color(0xFF42A5F5),
-        title: Center(
-          child: const Text(
+        title: const Center(
+          child: Text(
             'FluidOps Services',
             style: TextStyle(
               fontSize: 24,
@@ -28,7 +30,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
             color: Colors.white,
           ),
@@ -37,8 +39,8 @@ class HomeScreen extends StatelessWidget {
           },
         ),
       ),
-      body: Center(
-        child: const Text(
+      body: const Center(
+        child: Text(
           'Página Inicial',
           style: TextStyle(
             fontSize: 24,
@@ -51,14 +53,16 @@ class HomeScreen extends StatelessWidget {
 }
 
 class Agendar extends StatelessWidget {
+  const Agendar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF42A5F5),
       appBar: AppBar(
         backgroundColor: const Color(0xFF42A5F5),
-        title: Center(
-          child: const Text(
+        title: const Center(
+          child: Text(
             'Agendar',
             style: TextStyle(
               fontSize: 24,

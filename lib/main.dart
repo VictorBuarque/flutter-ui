@@ -11,10 +11,10 @@ void main() {
     MaterialApp(
       initialRoute: AppRoutes.splashscreen, // Rota inicial para o splash screen
       routes: {
-        AppRoutes.splashscreen: (context) => SplashScreen(),
+        AppRoutes.splashscreen: (context) => const SplashScreen(),
         AppRoutes.homescreen: (context) => const homescreen.HomeScreen(),
-        AppRoutes.agendar: (context) => Agendar(),
-        AppRoutes.checarservico: (context) => ChecarServico(),
+        AppRoutes.agendar: (context) => const Agendar(),
+        AppRoutes.checarservico: (context) => const ChecarServico(),
       },
     ),
   );
