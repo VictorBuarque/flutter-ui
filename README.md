@@ -11,9 +11,10 @@ Você pode visualizar o design do aplicativo no Figma - [aqui:](https://www.figm
 
 A aplicação consiste em 4 interfaces, a de abertura contendo splash, o home que é um menu de seleção e as páginas de agendamento e checagem de status.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Contribuição
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (git checkout -b feature/nova-feature)
+3. Faça commit de suas alterações (git commit -m 'Adicione sua feature')
+4. Faça push para a branch (git push origin feature/nova-feature)
+5. Abra um pull request
